@@ -14,15 +14,23 @@ function loginController($scope) {
     $scope.hideArrow = true;
 
     $scope.verifyEmail = function () {
-        $scope.hideName = false;
-        $scope.hideemailLabel = false;
-        $scope.hidePasswordBox = false;
-        $scope.hideNextBtn = true;
-        $scope.hideSignBtn = false;
-        $scope.hideCreateTxt = true;
-        $scope.hideSignTxt = false;
-        $scope.hideEmailBox = true;
-        $scope.hideArrow = false;
+        console.log($scope.loginForm.$valid);
+        if ($scope.loginForm.$valid) {
+            $scope.hideName = false;
+            $scope.hideemailLabel = false;
+            $scope.hidePasswordBox = false;
+            $scope.hideNextBtn = true;
+            $scope.hideSignBtn = false;
+            $scope.hideCreateTxt = true;
+            $scope.hideSignTxt = false;
+            $scope.hideEmailBox = true;
+            $scope.hideArrow = false;            
+        }
+    };
+    
+    $scope.verifyPassword = function () {
+        $scope.passwordRequired = true;
+        console.info($scope.loginForm.$valid);
     }
 
     $scope.goBack = function () {

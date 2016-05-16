@@ -43,16 +43,16 @@
                     <img class="user-img" src="">
                     <div class="name" ng-hide="hideName">Kashif Ansari</div>
                     <div class="email-label" ng-hide="hideemailLabel">email@email.com</div>
-                    <ng-form class="login-form">
+                    <form name="loginForm" class="login-form">
                         <div class="email" ng-hide="hideEmailBox">
-                            <input type="email" ng-required="true"/>
+                            <input type="email" ng-model="emailID" required/>
                         </div>
                         <div class="email" ng-hide="hidePasswordBox">
-                            <input type="password" ng-required="true"/>
+                            <input type="password" ng-model="password" ng-required="passwordRequired"/>
                         </div>
                         <button class="next-btn" ng-hide="hideNextBtn" ng-click="verifyEmail()">Next</button>
-                        <button class="sign-in-btn" ng-hide="hideSignBtn">Sign In</button>
-                    </ng-form>
+                        <button class="sign-in-btn" ng-hide="hideSignBtn" ng-click="verifyPassword()">Sign In</button>
+                    </form>
                 </div>
             </div>
         </div>
