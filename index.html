@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginApp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/vendor/angular.js"></script>
+    <script src="js/app.js"></script>
+</head>
+</head>
+
+<body>
+    <div class="container-fluid" ng-app="loginApp" ng-controller="loginController">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="header-img-container">
+                    <img src="img/headerlogo.png">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="header-label">One account. All of Google.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="sign-in-label">Sign in to continue to Gmail.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="login-container">
+                    <div class="back-arrow" ng-hide="hideArrow" ng-click="goBack()">
+                        <img src="img/backArrow.png">
+                    </div>
+                    <img class="user-img" src="">
+                    <div class="name" ng-hide="hideName">Kashif Ansari</div>
+                    <div class="email-label" ng-hide="hideemailLabel">email@email.com</div>
+                    <ng-form class="login-form">
+                        <div class="email" ng-hide="hideEmailBox">
+                            <input type="email" ng-required="true"/>
+                        </div>
+                        <div class="email" ng-hide="hidePasswordBox">
+                            <input type="password" ng-required="true"/>
+                        </div>
+                        <button class="next-btn" ng-hide="hideNextBtn" ng-click="verifyEmail()">Next</button>
+                        <button class="sign-in-btn" ng-hide="hideSignBtn">Sign In</button>
+                    </ng-form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="create-acc-link" ng-hide="hideCreateTxt">
+                    <a href="#">Create account</a>
+                </div>
+                <div class="create-acc-link" ng-hide="hideSignTxt">
+                    <a href="#">Sign in with a different account</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="footer-label">One Google Account for everything Google</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="footer-img">
+                    <img src="img/bottomLogo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

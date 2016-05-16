@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', arial;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.header-img-container {
+  margin-top: 26px;
+}
+.header-label {
+  margin-top: 40px;
+  font-size: 26px;
+}
+.sign-in-label {
+  margin-top: 30px;
+  font-size: 18px;
+}
+.login-container {
+  margin-top: 20px;
+  width: 316px;
+  display: inline-block;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+}
+.login-container .back-arrow {
+  text-align: left;
+  cursor: pointer;
+}
+.login-container .user-img {
+  margin-top: 40px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: yellow;
+}
+.login-container .name {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.login-container .email {
+  margin-top: 20px;
+}
+.login-container .email input {
+  width: 273px;
+  height: 42px;
+}
+.login-container .next-btn,
+.login-container .sign-in-btn {
+  margin-top: 5px;
+  background-color: #4185f3;
+  border-color: #4185f3;
+  color: white;
+  padding: 10px 114px;
+  border-radius: 4px;
+  margin-bottom: 68px;
+}
+.login-container .next-btn {
+  padding: 10px 120px;
+}
+.create-acc-link {
+  margin-top: 27px;
+}
+.footer-label {
+  margin-top: 33px;
+}
+.footer-img {
+  margin-top: 12px;
+}
